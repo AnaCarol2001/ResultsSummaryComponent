@@ -1,0 +1,22 @@
+.list {
+  display: grid;
+  gap: 1rem;
+}
+
+.list--noStyle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list__item > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.list__item__text {
+  flex: 1;
+}

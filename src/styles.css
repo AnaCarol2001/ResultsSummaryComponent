@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --clr-hsl-primary-red: 0, 100%, 67%;
+  --clr-hsl-primary-yellow: 39, 100%, 56%;
+  --clr-hsl-primary-green: 166, 100%, 37%;
+  --clr-hsl-primary-blue: 234, 85%, 45%;
+
+  --clr-hsl-secondary-slateBlue: 252, 100%, 67%;
+  --clr-hsl-secondary-royalBlue: 241, 81%, 54%;
+  --clr-hsl-secondary-violetBlue: 256, 72%, 46%;
+  --clr-hsl-secondary-persianBlue: 241, 72%, 46%;
+
+  --clr-hsl-neutral-white: 0, 0%, 100%;
+  --clr-hsl-neutral-blue: 221, 100%, 96%;
+  --clr-hsl-neutral-lavender: 241, 100%, 89%;
+  --clr-hsl-neutral-darkBlue: 224, 30%, 27%;
+
+  --clr-primary-red: hsl(var(--clr-hsl-primary-red));
+  --clr-primary-yellow: hsl(var(--clr-hsl-primary-yellow));
+  --clr-primary-green: hsl(var(--clr-hsl-primary-green));
+  --clr-primary-blue: hsl(var(--clr-hsl-primary-blue));
+
+  --clr-secondary-slateBlue: hsl(var(--clr-hsl-secondary-slateBlue));
+  --clr-secondary-royalBlue: hsl(var(--clr-hsl-secondary-royalBlue));
+  --clr-secondary-violetBlue: hsl(var(--clr-hsl-secondary-violetBlue));
+  --clr-secondary-persianBlue: hsl(var(--clr-hsl-secondary-persianBlue));
+
+  --clr-neutral-white: hsl(var(--clr-hsl-neutral-white));
+  --clr-neutral-blue: hsl(var(--clr-hsl-neutral-blue));
+  --clr-neutral-lavender: hsl(var(--clr-hsl-neutral-lavender));
+  --clr-neutral-darkBlue: hsl(var(--clr-hsl-neutral-darkBlue));
+
+  --bg-gradient: linear-gradient(
+    var(--clr-secondary-slateBlue),
+    var(--clr-secondary-royalBlue)
+  );
+  --gradient-transparent: linear-gradient(
+    var(--clr-secondary-violetBlue),
+    hsla(var(--clr-hsl-secondary-persianBlue), 0)
+  );
+
+  --font-family: "HankenGrotesk", "arial";
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.5rem;
+  --fs-600: 2rem;
+  --fs-700: 3.5rem;
+  --fs-800: 4rem;
+}
+
+/* Reset */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--fs-300);
+  color: var(--clr-neutral-darkBlue);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: var(--fs-400);
+    display: grid;
+    place-items: center;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+/* Utility Classes */
+
+.text-noWrap {
+  white-space: nowrap;
+}
+
+.mb-regular {
+  margin-bottom: 1rem;
+}
+
+.mb-medium {
+  margin-bottom: 1.5rem;
+}
+
+.mb-large {
+  margin-bottom: 2.5rem;
+}
+
+.fc-white {
+  color: var(--clr-neutral-white);
+}
+
+.fc-darkBlue {
+  color: var(--clr-neutral-darkBlue);
+}
+
+.fc-gray {
+  color: hsla(var(--clr-hsl-neutral-darkBlue), 0.7);
+}
+
+.fs-large {
+  font-size: var(--fs-400);
+}
+
+.fs-xLarge {
+  font-size: var(--fs-500);
+}
+
+.fs-xxLarge {
+  font-size: var(--fs-700);
+}
+
+@media screen and (min-width: 768px) {
+  .fs-large {
+    font-size: var(--fs-500);
+  }
+
+  .fs-xLarge {
+    font-size: var(--fs-600);
+  }
+
+  .fs-xxLarge {
+    font-size: var(--fs-800);
+  }
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-black {
+  font-weight: var(--fw-black);
+}
+
+/* Component */
+
+.action-button {
+  line-height: 1;
+  padding: 0.9em 2em;
+  background: var(--clr-neutral-darkBlue);
+  color: var(--clr-neutral-white);
+  border: none;
+  border-radius: 10em;
+  cursor: pointer;
+}
+
+.action-button:is(:hover, :focus) {
+  background: var(--bg-gradient);
+}
+
+.item-red {
+  background-color: hsla(var(--clr-hsl-primary-red), 0.1);
+  color: var(--clr-primary-red);
+}
+.item-green {
+  background-color: hsla(var(--clr-hsl-primary-green), 0.1);
+  color: var(--clr-primary-green);
+}
+.item-blue {
+  background-color: hsla(var(--clr-hsl-primary-blue), 0.1);
+  color: var(--clr-primary-blue);
+}
+.item-yellow {
+  background-color: hsla(var(--clr-hsl-primary-yellow), 0.1);
+  color: var(--clr-primary-yellow);
+}
