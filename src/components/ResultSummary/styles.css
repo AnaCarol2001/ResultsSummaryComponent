@@ -132,7 +132,14 @@
   animation-delay: var(--_action-btn-delay);
 }
 
-@media screen and (min-width: 600px) {
+@media (prefers-reduced-motion) {
+  .results-summary {
+    --_results_ctr_duration: 0ms;
+    --_results_ctr_delay: 0ms;
+  }
+}
+
+@media screen and (min-width: 600px) and (prefers-reduced-motion: no-preference) {
   .results-summary {
     --_results_text_duration: 500ms;
     --_results_text_delay: 0ms;
