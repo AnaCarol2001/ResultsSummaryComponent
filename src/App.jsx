@@ -8,6 +8,19 @@ function App() {
       <main>
         <ResultsSummary />
       </main>
+      <footer className="attribution">
+        <p>
+          Challenge by{" "}
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by{" "}
+          <a href="https://www.frontendmentor.io/profile/AnaCarol2001">
+            AnaCarolina
+          </a>
+          .
+        </p>
+      </footer>
     </HeadingLevelContext.Provider>
   );
 }

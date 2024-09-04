@@ -72,7 +72,7 @@
   margin: 0;
 }
 
-body {
+body #root {
   min-height: 100vh;
   font-family: var(--font-family);
   font-size: var(--fs-300);
@@ -80,9 +80,10 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  body {
+  body #root {
     font-size: var(--fs-400);
     display: grid;
+    grid-template-rows: 1fr auto;
     place-items: center;
   }
 }
@@ -196,6 +197,18 @@ button {
 .item-yellow {
   background-color: hsla(var(--clr-hsl-primary-yellow), 0.1);
   color: var(--clr-primary-yellow);
+}
+
+/* Layout */
+
+.attribution {
+  text-align: center;
+  padding: 1em;
+}
+
+.attribution a {
+  font-weight: var(--fw-bold);
+  color: var(--clr-hsl-secondary-royalBlue);
 }
 
 /* Animations */
