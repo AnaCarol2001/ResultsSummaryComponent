@@ -1,6 +1,6 @@
 import Heading from "../utility/Heading";
 import Section from "../utility/Section";
-import data from "../../data.json";
+import data from "../../data.js";
 import Summary from "./Summary";
 import "./styles.css";
 import Button from "../utility/Button";
