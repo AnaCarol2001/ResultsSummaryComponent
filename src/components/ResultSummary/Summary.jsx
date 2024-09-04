@@ -11,7 +11,11 @@ export default function Summary({ categories }) {
       <Heading className="fs-large fs-regular mb-medium">Summary</Heading>
       <List.Root hasListStyle={false}>
         {categories.map((category, index) => (
-          <List.Item key={index} className={colors[index]}>
+          <List.Item
+            key={index}
+            className={colors[index]}
+            style={{ "--_slide-order": index + 1 }}
+          >
             <List.Icon>
               <img src={category.icon} aria-hidden="true" />
             </List.Icon>

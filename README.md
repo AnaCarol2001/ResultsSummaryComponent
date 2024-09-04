@@ -17,4 +17,5 @@ Users should be able to:
 - [Heading Levels in Reusable Components](https://www.upyoura11y.com/reusable-components-with-headers/)
 - [Passing Data Deeply with Context](https://react.dev/learn/passing-data-deeply-with-context)
 - [Implementando Composition Pattern em aplicações React](https://vinniciusgomes.medium.com/implementando-composition-pattern-em-aplicacoes-react-4e8dc92742ff)
+- [Different Approaches for Creating a Staggered Animation](https://css-tricks.com/different-approaches-for-creating-a-staggered-animation/)
 - [From Design to Code // HTML & CSS from scratch // Frontend Mentor](https://youtu.be/KqFAs5d3Yl8?si=UYLVDR9lIQP-V_--)

@@ -7,7 +7,10 @@ import Button from "../utility/Button";
 
 export default function ResultsSummary() {
   return (
-    <Section className="results-summary">
+    <Section
+      style={{ "--_count-items": data.length }}
+      className="results-summary"
+    >
       <div className="results-summary__results">
         <Heading className="fs-large fw-regular">Your Result</Heading>
         <p className="results-summary__results__score">
