@@ -164,6 +164,13 @@
     transform: translate3d(50%, 0, 0);
   }
 
+  .results-summary__summary {
+    transform: translate3d(-5%, 0, 0);
+    animation: fadeIn linear forwards, slide ease-out forwards;
+    animation-duration: var(--_summary_ctr_duration);
+    animation-delay: var(--_summary_ctr_delay);
+  }
+
   .results-summary__summary ul > li {
     transform: translate3d(-10%, 0, 0);
   }
